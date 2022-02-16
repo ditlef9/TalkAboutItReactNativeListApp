@@ -3,7 +3,6 @@ import { View, TextInput, Button, StyleSheet } from 'react-native';
 
 /* 2:30 */
 
-
 const KeywordInput = props => {
     const [enteredKeyword, setEnteredKeyword] = useState(''); /* Bind TextInput to the variables */
 
