@@ -4,6 +4,12 @@
 https://github.com/ditlef9/TalkAboutItReactNativeListApp/blob/master/LICENSE
 
 # 2. About
+Your at the hair dresser, and your have to spend 30 minutes here.. What are you going to talk to the hair dresser about?
+You need some keywords to know what you should tak about - and now you got the right tool in your pocket. 
+
+Talk About It! is a simple application that runs on web, Android and iPhone. It allows you to add keywords into a list
+with ideas about what you want to talk about. When you click a keyword it is deleted from the list. 
+
 [img]https://github.com/ditlef9/TalkAboutItReactNativeListApp/blob/master/TalkAboutItReactNativeListApp.png?raw=true[/img]
 
 # 3. How to Install on local machine
