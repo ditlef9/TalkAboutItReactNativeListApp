@@ -9,14 +9,22 @@ export default function App() {
 
   const [keywordsArray, setKeywordsArray] = useState([]);  /* Array of keywords */
 
-  
+  /*- Array list ----------------------------------------------------------------------- */
   const addKeywordHandler = keywordTitle => {
     setKeywordsArray(currentKeywords => [
       ...currentKeywords, 
       { id: Math.random().toString(), value: keywordTitle }
     ]); /* Takes old arrays and puts into new array */
-  }
+  };
 
+  /*- Delete keyword handler ------------------------------------------------------------ */
+  const deleteKeywordHandler = keywordId => {
+    setKeywordsArray(currentKeywords => { return currentKeywords.filter((keyword) => keyword.id !== keywordId); })
+  
+  }; // deleteKeywordHandler
+
+
+  /*- Main ------------------------------------------------------------------------------ */
   return (
     <View style={styles.container}>
 
@@ -26,12 +34,13 @@ export default function App() {
       { /* Output array of keywords */ }
       <FlatList 
       keyExtractor={(item, index) => item.id}
-      data={keywordsArray} renderItem={itemData => <KeywordItem title={itemData.item.value} /> }
+      data={keywordsArray} renderItem={itemData => <KeywordItem title={itemData.item.value} id={itemData.item.id} onDelete={deleteKeywordHandler} /> }
       />
     </View>
   );
 }
 
+/*- Stylesheet ------------------------------------------------------------------------ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
