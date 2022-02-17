@@ -10,7 +10,7 @@ You need some keywords to know what you should tak about - and now you got the r
 Talk About It! is a simple application that runs on web, Android and iPhone. It allows you to add keywords into a list
 with ideas about what you want to talk about. When you click a keyword it is deleted from the list. 
 
-[img]https://github.com/ditlef9/TalkAboutItReactNativeListApp/blob/master/TalkAboutItReactNativeListApp.png?raw=true[/img]
+![TalkAboutItReactNativeListAppScreenshot.png](https://github.com/ditlef9/TalkAboutItReactNativeListApp/blob/master/TalkAboutItReactNativeListAppScreenshot.png)
 
 # 3. How to Install on local machine
 a. Install node-x64.msi from https://nodejs.org/en/<br />
